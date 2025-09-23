@@ -1,0 +1,165 @@
+---
+title: "探索法解题"
+---
+
+# 简介
+
+-   按照成果导向与菜单式导航模式, 演示了针对探索法求解题目的设计方案.
+
+
+
+##  斐波那契数列的通项公式
+
+::: {.callout-important collapse="true" icon="true"}
+##  问题
+
+Fibonacci数列$\{F_n, \}$数列满足:
+$$ F_{n+1}=F_n+F_{n-1}, n=2,3,\cdots,\quad F_0=F_1=1.$$
+
+求$F_{n}$的通项公式?
+
+:::
+
+
+::: {.callout-note collapse="true" icon="ture"}
+##  通项公式长什么样?
+
+::: {.callout-tip collapse="true" icon="true"}
+## 1. 通项公式是什么?
+
+- $F_{n}$是一个函数, 关于$n$的函数$$F_n=f(n).$$
+
+:::
+::: {.callout-tip collapse="true" icon="true"}
+##  2. 猜猜通项公式长什么样?
+
+- 先从最简单的函数开始.
+
+- 基本初等函数: 幂函数, 三角, 反三角函数, 对数函数, 指数函数.
+
+:::
+::: {.callout-tip collapse="true" icon="true"}
+##  3. 验证你的猜想
+
+- 代入验证
+
+
+::: {.callout-important collapse="true" icon="true"}
+## 不可能是三角, 反三角函数, 对数函数. 为什么?
+
+- 涉及无理数, 不太可能满足递推公式
+
+:::
+
+::: {.callout-important collapse="true" icon="true"}
+## 验证幂函数
+
+- 代入$F_n=n^k$ 验证不可能
+
+:::
+
+::: {.callout-important collapse="true" icon="true"}
+##  验证指数函数$a_n=\lambda^n.$
+
+- $$\lambda^{n+1}=\lambda^{n}+\lambda^{n-1}.$$
+
+- $\lambda$取特殊值时, 指数函数满足递推公式.
+$$\lambda^{n-1}(\lambda^{2}-\lambda-1)=0.$$
+
+- $F_n=\lambda_1^n, b_n=\lambda_2^n.$
+
+:::
+:::
+::: {.callout-tip collapse="true" icon="true"}
+##  4. 前两项满足吗?
+
+- $\lambda_1^n, \lambda_2^n.$都不满足
+
+
+
+- 怎么办? 想办法用已有的组合出要求的!
+
+- $F_n=a\lambda_1^n+b\lambda_2^n.$
+
+:::
+:::
+
+::: {.callout-important collapse="true" icon="ture"}
+
+## 递推数列的性质
+
+::: {.callout-tip collapse="true" icon="true"}
+##  1. 组合仍然满足递推公式
+
+- 验证对任意的$a, b\in \mathbb R$,  $F_n=a\lambda_1^n+b\lambda_2^n$ 仍然满足递推公式.
+
+
+
+
+
+:::
+
+
+::: {.callout-tip collapse="true" icon="true"}
+##  2. 满足前两项
+
+- 待定系数法求$a, b$
+
+- $F_n=a\lambda_1^n+b\lambda_2^n$满足
+$$\left\{\begin{aligned}
+F_0&=a+b=1,\\
+F_1&=a\lambda_1+b\lambda_2=1
+\end{aligned}\right..$$
+
+
+
+
+
+
+
+- 解方程组得到$a, b.$
+
+
+
+:::
+:::
+::: {.callout-note collapse="true" icon="ture"}
+
+## 总结
+
+1. 大胆猜测, 小心求证
+
+2. 用两个特殊的数列组合得到满足前两项条件的解.
+
+:::
+
+::: {.callout-important collapse="true" icon="ture"}
+
+
+## 推广
+
+
+::: {.callout-tip collapse="true" icon="true"}
+##   差分方程
+
+$$a_{n+1}=2a_n+3a_{n-1}, n=2,3,\cdots,\quad a_0=a,a_1=b.$$
+
+:::
+::: {.callout-tip collapse="true" icon="true"}
+##  重根
+
+$$a_{n+1}=2a_n-a_{n-1}, n=2,3,\cdots,\quad a_0=a,a_1=b.$$
+
+
+- 只找到一个$a_n=\lambda_1^n,$ 另一个满足递推公式的数列怎么找?
+
+- 方程找根? 
+
+- 如果方程有重根, 求导之后仍是根.
+
+
+- 验证$b_n=n\lambda_1^n$也是解, 然后组合.
+
+
+:::
+:::

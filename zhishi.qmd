@@ -1,0 +1,106 @@
+---
+title: "知识点设计"
+---
+
+# 简介
+
+-   本页按照首页中的成果导向与菜单式导航模式, 演示了针对知识点的设计方案.
+
+
+
+## 重要极限的学习
+
+$$\lim\limits_{x\rightarrow 0} \frac{\sin x}{x}=1$$
+
+::: {.callout-important collapse="true" icon="true"}
+# 目标要求
+
+-   知识
+
+    掌握重要极限。
+
+-   能力
+
+    能够用重要极限求较为复杂的极限。
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+# 重要极限是什么 $\star$
+
+-   重要极限是一个特殊的极限。
+
+-   可以用它求极限，复杂的极限变为较为简单的极限。
+:::
+
+::: {.callout-important collapse="true" icon="true"}
+# 重要极限怎么用 $\star$
+
+::: {.callout-tip collapse="true" icon="true"}
+## 注意使用条件是什么
+
+注意使用条件：${x\rightarrow 0}.$
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 灵活利用变量代换
+
+只要表达式$\otimes$是一个无穷小，下面的极限仍然成立。 $$\lim\limits_{\otimes\rightarrow 0} \frac{\sin \otimes}{\otimes}=1.$$
+:::
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+# 几个例子  $\star$
+
+::: {.callout-note collapse="true" icon="true"}
+## 例子  $\star$
+
+求极限$\lim\limits_{x\rightarrow 0} \frac{\sin 3x}{x}.$
+
+::: {.callout-warning collapse="true" icon="true"}
+### 提示
+
+-   用变量代换。
+:::
+
+::: {.callout-warning collapse="true" icon="true"}
+### 参考答案
+
+    解： $$\lim\limits_{x\rightarrow 0} \frac{\sin 3x}{x}=\lim\limits_{x\rightarrow 0} 3\frac{\sin 3x}{3x}=3\lim\limits_{x\rightarrow 0} \frac{\sin 3x}{3x}=3.$$
+:::
+:::
+
+::: {.callout-note collapse="true" icon="true"}
+## 例子 $\star\star$
+
+求极限$\lim\limits_{x\rightarrow 0} \frac{\arcsin x}{x}。$
+
+::: {.callout-warning collapse="true" icon="true"}
+### 提示
+
+-   用变量代换$y=\arcsin x,$。
+:::
+
+::: {.callout-warning collapse="true" icon="true"}
+### 参考答案
+
+    解：设$y=\arcsin x,$ 则 $x=\sin y$, 且$x\rightarrow 0$时有$y\rightarrow 0.$ 因此 $$\lim\limits_{x\rightarrow 0} \frac{\arcsin  x}{x}=\lim\limits_{y\rightarrow 0} \frac{y }{\sin y}=1.$$
+:::
+:::
+:::
+
+::: {.callout-important collapse="true" icon="true"}
+# 重要极限怎么证？
+
+::: {.callout-tip collapse="true" icon="true"}
+## 用夹逼准则证明
+
+参考答案
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 用洛必达法则证明
+
+参考答案
+:::
+:::
+

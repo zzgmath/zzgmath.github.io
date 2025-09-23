@@ -1,0 +1,106 @@
+---
+title: "练习题设计"
+---
+
+# 简介
+
+-   按照成果导向与菜单式导航模式, 演示了针对练习题的设计方案.
+
+
+
+
+
+
+## 一道不等式题目
+
+$$证明:\ \left| e-\left(1+\frac{1}{n}\right)^n  \right| <\frac{3}{2n},  n\in \mathbb N^+.$$
+
+::: {.callout-note collapse="true" icon="true"}
+# 思路怎么来?
+
+::: {.callout-important collapse="true" icon="true"}
+## 看到不等式的左边想到什么?
+
+$$重要极限:\ \displaystyle\lim_{n\rightarrow \infty}\left(1+\frac{1}{n}\right)^n=e.$$
+:::
+
+::: {.callout-caution collapse="true" icon="true"}
+## 不等式的左边是什么意思?
+
+左边$|\left(1+\frac{1}{n}\right)^n-e|$, 可以看成$\left(1+\frac{1}{n}\right)^n$作为$e$的近似值的误差
+:::
+
+::: {.callout-important collapse="true" icon="true"}
+## 证明这个不等式的策略是什么?
+
+-   由上一步分析, 证明不等式就变成对函数$\left(1+\frac{1}{n}\right)^n$进行估计, 证明作为$e$的近似值的误差 小于$\frac{3}{2n}$. 可以用泰勒公式或幂级数估计误差.
+:::
+
+::: {.callout-caution collapse="true" icon="true"}
+## 这个题目的关键点在哪里?
+
+-   关键一: 会用泰勒公式估计函数值.
+
+-   关键二: $\left(1+\frac{1}{n}\right)^n$是幂指函数, 不好处理, 把它变为指数函数再估计. $$\left(1+\frac{1}{n}\right)^n=e^{n\ln \left(1+\frac{1}{n}\right)}.$$
+:::
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+# 解答中的一些分析步骤
+
+::: {.callout-important collapse="true" icon="true"}
+## 把幂指函数化为指数函数:
+
+$$\left(1+\frac{1}{n}\right)^n=e^{n\ln \left(1+\frac{1}{n}\right)}.$$
+:::
+
+::: {.callout-important collapse="true" icon="true"}
+## 用对数函数和指数函数的幂级数做近似.
+
+-   先研究指数上的表达式. $${n\ln \left(1+\frac{1}{n}\right)}=1-\frac{1}{2n}+\frac{1}{3n^2}+\cdots<1.$$
+
+-   再用指数函数幂级数展开: $$\begin{aligned}
+    &   0<\left( e-\left(1+\frac{1}{n}\right)^n  \right) =\left( e-e^{n\ln \left(1+\frac{1}{n}\right)}  \right) =e\left( 1-e^{\color{red} n\ln \left(1+\frac{1}{n}\right)-1}  \right) \\ 
+      &=e\left((\frac{1}{2n}-\frac{1}{3n^2}+\cdots) -\frac{1}{2}(\frac{1}{2n}-\frac{1}{3n^2}+\cdots)^2+\cdots \right) \\  
+    &<e\left(\frac{1}{2n}-\frac{1}{3n^2}+\cdots  \right) <e\left(\frac{1}{2n}  \right)<\frac{e}{2n}<\frac{3}{n}.
+      \end{aligned}$$
+:::
+:::
+
+::: {.callout-note collapse="true" icon="true"}
+# 参考答案
+
+解: 由对数函数的幂级数展开式有: $$0> {n\ln \left(1+\frac{1}{n}\right)}-1=-\frac{1}{2n}+\frac{1}{3n^2}-\frac{1}{4n^3}+\cdots>-\frac{1}{2n}.$$ 所以 $$\begin{aligned}
+    &   e^{n\ln \left(1+\frac{1}{n}\right)-1} > e^{-\frac{1}{2n}}>1-\frac{1}{2n}. 
+    \end{aligned}$$ 由此有 $$\begin{aligned}
+    &   0<\left( e-\left(1+\frac{1}{n}\right)^n  \right) =\left( e-e^{n\ln \left(1+\frac{1}{n}\right)}\right) =e\left( 1-e^{\color{red} n\ln \left(1+\frac{1}{n}\right)-1}  \right) \\ 
+    &<e\left(\frac{1}{2n}  \right)<\frac{e}{2n}<\frac{3}{2n}.
+    \end{aligned}$$
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+# 总结与评点
+
+-   仔细分析证明过程, 放缩只用到了第一项$-\frac{1}{2n},$ 所以证明最后写得更简洁
+
+-   要会把此不等式与估计近似值联系起来, 从而想到用泰勒公式
+
+-   幂指函数化为指数函数也能想到, 因为我们常用或知道的有泰勒公式的函数就那么几个, 当然要把不常用的函数用它们表示出来
+
+-   证明不等式可用级数展开式或泰勒公式
+
+-   对函数进行恰当的变形, 可以简化分析
+
+-   细节要注意, 特别是定理成立的条件
+:::
+
+::: {.callout-note collapse="true" icon="true"}
+# 查缺补漏
+
+此题涉及到的知识点, 直接点击可以了解详情.
+
+-   泰勒公式
+
+-   重要极限$e$
+:::
+

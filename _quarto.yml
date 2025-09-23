@@ -3,18 +3,40 @@ project:
   output-dir: docs
 
 website:
-  title: "mysite"
+  title: "学习资源新模式"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
-
+        text: 首页
+      - href: about.qmd
+        text: 简介
+    
+      
+      
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "周忠国&孟祥芹"
+      - text: "邮箱:zhghou@hhu.edu.cn"
+      - text: "****目录****"
+      - text: "新模式简介"
+        href: index.qmd
+      - section: "案例"
+        contents:
+          - zhishi.qmd
+          - jieti.qmd
+          - suzhi.qmd
+      - section: "漫游数学美不胜收"
+        contents: 
+          - taylor.qmd
+      
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    number-sections: true
     lang: zh-CN  
     
 
