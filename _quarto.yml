@@ -20,20 +20,23 @@ website:
       - text: "周忠国&孟祥芹"
       - text: "邮箱:zhghou@hhu.edu.cn"
       - text: "****目录****"
-      - text: "新模式简介"
+      - text: "<strong>新模式简介</strong>"
         href: index.qmd
-      - section: "案例"
+      - section: "<strong>案例</strong>"
         contents:
           - zhishi.qmd
           - jieti.qmd
           - suzhi.qmd
-      - section: "漫游数学美不胜收"
+      - section: "<strong>漫游数学美不胜收</strong>"
         contents: 
           - taylor.qmd
+          - scfc.qmd
+          
       
 format:
   html:
     theme: cosmo
+    
     css: styles.css
     toc: true
     number-sections: true

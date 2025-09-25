@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>学习资源新模式 - 练习题设计</title>
+<title>学习资源新模式 - 一元三次方程</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -136,7 +136,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切换侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./zhishi.html"><strong>案例</strong></a></li><li class="breadcrumb-item"><a href="./jieti.html">练习题设计</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taylor.html"><strong>漫游数学美不胜收</strong></a></li><li class="breadcrumb-item"><a href="./scfc.html">一元三次方程</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切换侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -188,7 +188,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./jieti.html" class="sidebar-item-text sidebar-link active">
+  <a href="./jieti.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">练习题设计</span></a>
   </div>
 </li>
@@ -217,7 +217,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./scfc.html" class="sidebar-item-text sidebar-link">
+  <a href="./scfc.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">一元三次方程</span></a>
   </div>
 </li>
@@ -233,19 +233,23 @@ window.Quarto = {
     <h2 id="toc-title">该页面内容</h2>
    
   <ul>
-  <li><a href="#简介" id="toc-简介" class="nav-link active" data-scroll-target="#简介"><span class="header-section-number">1</span> 简介</a>
+  <li><a href="#公式解" id="toc-公式解" class="nav-link active" data-scroll-target="#公式解"><span class="header-section-number">1</span> 公式解</a>
   <ul class="collapse">
-  <li><a href="#一道不等式题目" id="toc-一道不等式题目" class="nav-link" data-scroll-target="#一道不等式题目"><span class="header-section-number">1.1</span> 一道不等式题目</a></li>
+  <li><a href="#方程x3bxc0的公式解" id="toc-方程x3bxc0的公式解" class="nav-link" data-scroll-target="#方程x3bxc0的公式解"><span class="header-section-number">1.1</span> 方程<span class="math inline">\(x^3+bx+c=0\)</span>的公式解</a></li>
   </ul></li>
+  <li><a href="#有理解" id="toc-有理解" class="nav-link" data-scroll-target="#有理解"><span class="header-section-number">2</span> 有理解</a></li>
+  <li><a href="#数值解" id="toc-数值解" class="nav-link" data-scroll-target="#数值解"><span class="header-section-number">3</span> 数值解</a></li>
+  <li><a href="#实根与虚根" id="toc-实根与虚根" class="nav-link" data-scroll-target="#实根与虚根"><span class="header-section-number">4</span> 实根与虚根</a></li>
+  <li><a href="#进一步的思考" id="toc-进一步的思考" class="nav-link" data-scroll-target="#进一步的思考"><span class="header-section-number">5</span> 进一步的思考</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./zhishi.html"><strong>案例</strong></a></li><li class="breadcrumb-item"><a href="./jieti.html">练习题设计</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taylor.html"><strong>漫游数学美不胜收</strong></a></li><li class="breadcrumb-item"><a href="./scfc.html">一元三次方程</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">练习题设计</h1>
+<h1 class="title">一元三次方程</h1>
 </div>
 
 
@@ -262,101 +266,175 @@ window.Quarto = {
 </header>
 
 
-<section id="简介" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> 简介</h1>
-<ul>
-<li>按照成果导向与菜单式导航模式, 演示了针对练习题的设计方案.</li>
-</ul>
-<section id="一道不等式题目" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="一道不等式题目"><span class="header-section-number">1.1</span> 一道不等式题目</h2>
-<p><span class="math display">\[证明:\ \left| e-\left(1+\frac{1}{n}\right)^n  \right| &lt;\frac{3}{2n},  n\in \mathbb N^+.\]</span></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-思路怎么来?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<p>设一元三次方程: <span class="math display">\[X^3+AX^2+BX+C=0.\]</span> 我们研究如何求它的根的问题.</p>
+<section id="公式解" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 公式解</h1>
+<p>一元三次方程和一元二次方程一样也有求根公式.</p>
 <div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-看到不等式的左边想到什么?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>重要极限: <span class="math display">\[\ \displaystyle\lim_{n\rightarrow \infty}\left(1+\frac{1}{n}\right)^n=e.\]</span></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-不等式的左边是什么意思?
+一元三次方程还能再简单一点吗?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>左边<span class="math inline">\(|\left(1+\frac{1}{n}\right)^n-e|\)</span>, 可以看成<span class="math inline">\(\left(1+\frac{1}{n}\right)^n\)</span>作为<span class="math inline">\(e\)</span>的近似值的误差</li>
+<li>即某些系数为0!</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+哪个系数容易变成0?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>平方项的系数<span class="math inline">\(A\)</span>.</p></li>
+<li><p>令<span class="math inline">\(X=x-\frac{A}{3},\)</span> 可以把上述方程化为 <span class="math display">\[x^3+bx+c=0.\]</span></p></li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-important callout-titled">
+</div>
+</div>
+</div>
+<section id="方程x3bxc0的公式解" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="方程x3bxc0的公式解"><span class="header-section-number">1.1</span> 方程<span class="math inline">\(x^3+bx+c=0\)</span>的公式解</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-证明这个不等式的策略是什么?
+1. 设<span class="math inline">\(u=s+t\)</span>是方程的一个根
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>由上一步分析, 证明不等式就变成对函数<span class="math inline">\(\left(1+\frac{1}{n}\right)^n\)</span>进行估计,</p></li>
-<li><p>证明作为<span class="math inline">\(e\)</span>的近似值的误差 小于<span class="math inline">\(\frac{3}{2n}\)</span>.</p></li>
-<li><p>可以用泰勒公式或幂级数估计误差.</p></li>
+<li><p>代入方程得: <span class="math display">\[(s+t)^3+b(s+t)+c=0.\]</span></p></li>
+<li><p>化简得: <span class="math display">\[s^3+t^3+u(3st+b)+c=0.\]</span></p></li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-这个题目的关键点在哪里?
+2. 包含3个未知数, 如何求解?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>关键一: 会用泰勒公式估计函数值.</p></li>
-<li><p>关键二: <span class="math inline">\(\left(1+\frac{1}{n}\right)^n\)</span>是幂指函数, 不好处理, 把它变为指数函数再估计. <span class="math display">\[\left(1+\frac{1}{n}\right)^n=e^{n\ln \left(1+\frac{1}{n}\right)}.\]</span></p></li>
+<li><p>去掉一个未知数<span class="math inline">\(u\)</span>!</p></li>
+<li><p>令<span class="math inline">\(u\)</span>的系数为0, 上式中就不含<span class="math inline">\(u\)</span>了, 即得方程组 <span class="math display">\[
+  \left\{ \begin{aligned}
+      3st+b=0,     \\
+      s^3+t^3+c=0.
+  \end{aligned} \right.
+\]</span></p></li>
+<li><p>换个方式看此方程组: <span class="math display">\[
+  \left\{ \begin{aligned}
+      s^3\cdot t^3=-\frac{b^3}{27},   \\
+      s^3+t^3=-c.
+  \end{aligned} \right.
+\]</span></p></li>
 </ul>
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+3. 求解<span class="math inline">\(s, t\)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>由根与系数的关系, 上面的方程组说明<span class="math inline">\(s^3, t^3\)</span>是方程组 <span class="math display">\[
+x^2+cx-\frac{b^3}{27}=0
+\]</span> 的两个根.</p></li>
+<li><p>因此得 <span class="math display">\[
+  \left\{ \begin{aligned}
+      s^3=\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}}) ,    \\
+      t^3=\frac{1}{2}({-c-{\sqrt{c^2+\frac{4}{27}b^3}}}) .
+  \end{aligned} \right.
+\]</span></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+得到解
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>由此得到<span class="math inline">\(s\)</span>有三种选择: <span class="math display">\[
+  \left\{ \begin{aligned}
+  s_1&amp;={\sqrt[3]{\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}})}};\\
+  s_2&amp;=\omega{\sqrt[3]{\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}})}};\\
+  s_3&amp;=\omega^2{\sqrt[3]{\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}})}}.
+  \end{aligned} \right.
+\]</span> 此处<span class="math inline">\(\omega^3=1, \omega=\displaystyle\frac{1-\sqrt{3}i}{2}\)</span>是3次单位根.</p></li>
+<li><p>根据关系<span class="math inline">\(\displaystyle s\cdot t=-\frac{b}{3}\)</span>同样可以得到 对应的<span class="math inline">\(t_1,t_2,t_3.\)</span></p></li>
+<li><p>根<span class="math inline">\(u\)</span>的表达式: <span class="math display">\[\begin{aligned}
+  u_1&amp;=s_1+t_1\\
+  &amp;={\sqrt[3]{\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}})}}+{\sqrt[3]{\frac{1}{2}({-c-{\sqrt{c^2+\frac{4}{27}b^3}}})}}.
+\end{aligned}\]</span><br>
+其余两个根可以类似的写出.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+求根公式的简化
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>上述公式里面有一些分母, 我们换换记号即可去掉分母.</p></li>
+<li><p>假设一元三次方程为: <span class="math display">\[
+x^3=3px+2q,
+\]</span></p></li>
+<li><p>则其有一个根 <span class="math display">\[
+{\sqrt[3]{{q+{\sqrt{q^2-p^3}}}}}+{\sqrt[3]{{q-{\sqrt{q^2-p^3}}}}}.
+\]</span></p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -366,126 +444,157 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-解答中的一些分析步骤
+一个例子
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-把幂指函数化为指数函数:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><span class="math display">\[\left(1+\frac{1}{n}\right)^n=e^{n\ln \left(1+\frac{1}{n}\right)}.\]</span></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-用对数函数和指数函数的幂级数做近似.
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
 <ul>
-<li><p>先研究指数上的表达式. <span class="math display">\[{n\ln \left(1+\frac{1}{n}\right)}=1-\frac{1}{2n}+\frac{1}{3n^2}+\cdots&lt;1.\]</span></p></li>
-<li><p>再用指数函数幂级数展开: <span class="math display">\[\begin{aligned}
-&amp;   0&lt;\left( e-\left(1+\frac{1}{n}\right)^n  \right) =\left( e-e^{n\ln \left(1+\frac{1}{n}\right)}  \right) \\
-&amp;=e\left( 1-e^{\color{red} n\ln \left(1+\frac{1}{n}\right)-1}  \right) \\
-  &amp;=e\left((\frac{1}{2n}-\frac{1}{3n^2}+\cdots) -\frac{1}{2}(\frac{1}{2n}-\frac{1}{3n^2}+\cdots)^2+\cdots \right) \\  
-&amp;&lt;e\left(\frac{1}{2n}-\frac{1}{3n^2}+\cdots  \right) &lt;e\left(\frac{1}{2n}  \right)&lt;\frac{e}{2n}&lt;\frac{3}{n}.
-  \end{aligned}\]</span></p></li>
+<li>假设<span class="math inline">\(x^3=6x+6,\)</span> 请试试如何用公式求根.</li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-参考答案
+用三角函数法推导方程<span class="math inline">\(x^3=3px+2q\)</span>的求根公式
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>解: 由对数函数的幂级数展开式有: <span class="math display">\[\begin{aligned}0&amp;&gt; {n\ln \left(1+\frac{1}{n}\right)}-1\\
-&amp;=-\frac{1}{2n}+\frac{1}{3n^2}-\frac{1}{4n^3}+\cdots&gt;-\frac{1}{2n}.\end{aligned}\]</span> 所以 <span class="math display">\[\begin{aligned}
-    &amp;   e^{n\ln \left(1+\frac{1}{n}\right)-1} &gt; e^{-\frac{1}{2n}}&gt;1-\frac{1}{2n}.
-    \end{aligned}\]</span></p>
-<p>由此有 <span class="math display">\[\begin{aligned}
-    &amp;   0&lt;\left( e-\left(1+\frac{1}{n}\right)^n  \right) =\left( e-e^{n\ln \left(1+\frac{1}{n}\right)}\right) \\
-    &amp;=e\left( 1-e^{\color{red} n\ln \left(1+\frac{1}{n}\right)-1}  \right) \\
-    &amp;&lt;e\left(\frac{1}{2n}  \right)&lt;\frac{e}{2n}&lt;\frac{3}{2n}.
-    \end{aligned}\]</span></p>
+<ul>
+<li>根据三倍角公式 <span class="math display">\[
+\cos3\theta=4C^3-3C, C=\cos\theta.
+\]</span></li>
+<li>步骤
+<ol type="1">
+<li>以<span class="math inline">\(x=2{\sqrt{p}}C\)</span>代入方程中,得到 <span class="math inline">\(4C^3-3C=\displaystyle\frac{q}{p\sqrt{p}}.\)</span></li>
+<li>设<span class="math inline">\(q^2\leq p^3,\)</span> 导出原方程的解 <span class="math display">\[
+  x=2\sqrt{p}\cos[\frac{1}{3}(\phi+2m\pi)],
+  \]</span> 其中<span class="math inline">\(m\)</span>是一整数, <span class="math inline">\(\phi=\arccos(q/p\sqrt{p}).\)</span></li>
+<li>验证此公式给出了方程<span class="math inline">\(x^3=3x\)</span>的正确解<span class="math inline">\(x=0,\pm\sqrt{3}.\)</span></li>
+</ol></li>
+</ul>
 </div>
 </div>
 </div>
+</section>
+</section>
+<section id="有理解" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> 有理解</h1>
+<ul>
+<li><p>虽然一元三次方程有求根公式, 但是此公式比较复杂, 即使方程有简单的根, 从公式中也不能明显地看出来.</p></li>
+<li><p>试试求解方程 <span class="math display">\[
+f(x)=(x-1)(x-2)(x+3)=x^3-7x+6.
+\]</span></p></li>
+<li><p>考虑到一般遇到的一元三次方程都有有理根甚至整数根, 所以我们可以合理的猜测根可能是哪些整数, 然后验证是否正确即可.</p></li>
+</ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-总结与评点
+有理根长什么样?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>仔细分析证明过程, 放缩只用到了第一项<span class="math inline">\(-\frac{1}{2n},\)</span> 所以证明最后写得更简洁</p></li>
-<li><p>要会把此不等式与估计近似值联系起来, 从而想到用泰勒公式</p></li>
-<li><p>幂指函数化为指数函数.</p></li>
-<li><p>要把不常用的函数用常用或有泰勒公式的函数表示出来.</p></li>
-<li><p>证明不等式可用级数展开式或泰勒公式</p></li>
-<li><p>对函数进行恰当的变形, 可以简化分析</p></li>
-<li><p>细节要注意, 特别是定理成立的条件</p></li>
+<li><p>假设方程<span class="math inline">\(f(x)=ax^3+bx^2+cx+d=0,\)</span> 系数<span class="math inline">\(a,b,c,d\)</span>都是整数,</p></li>
+<li><p>设<span class="math inline">\(x=\displaystyle\frac{q}{p}\)</span>是方程的一个有理根, 其中<span class="math inline">\(p,q\)</span>互素.</p></li>
+<li><p>代入方程得: <span class="math display">\[
+a\left(\frac{q}{p}\right)^3+b\left(\frac{q}{p}\right)^2+c\left(\frac{q}{p}\right)+d=0
+\]</span></p></li>
+<li><p>去分母得 <span class="math display">\[
+aq^3+bq^2p+cqp^2+dp^3=0.
+\]</span></p></li>
+<li><p>上式可以写成 <span class="math display">\[\begin{aligned}
+&amp;-aq^3=bq^2p+cqp^2+dp^3,\\
+&amp;aq^3+bq^2p+cqp^2=-dp^3.
+\end{aligned}\]</span></p></li>
+<li><p>根据<span class="math inline">\(p,q\)</span>互素得<span class="math inline">\(p|a, q|d\)</span>.</p></li>
+<li><p><strong>结论</strong> 有理根的分子是常数项<span class="math inline">\(d\)</span>的因子, 分母是3次项<span class="math inline">\(a\)</span>的因子.</p></li>
+<li><p>把所有有理根的候选答案, 一一代入方程验证即可.</p></li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-查缺补漏
+例: 求<span class="math inline">\(f(x)=(x-1)(x-2)(x+3)=x^3-7x+6\)</span>的有理根.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>此题涉及到的知识点, 直接点击可以了解详情.</p>
 <ul>
-<li><p>泰勒公式</p></li>
-<li><p>重要极限<span class="math inline">\(e\)</span></p></li>
+<li><p>则此方程的有理根一定是整数, 只可能是 <span class="math display">\[\pm1,\, \pm2,\, \pm3,\, \pm6. \]</span></p></li>
+<li><p>一一代入验证.</p></li>
 </ul>
 </div>
 </div>
 </div>
-
-
 </section>
+<section id="数值解" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 数值解</h1>
+<ul>
+<li><p>有时方程只有无理根或复根, 如果想求出方程的实根的近似解, 就可以用数值方法估计.</p></li>
+<li><p>一个基本的想法是先确定实根在哪个区间上, 然后不断地缩短区间长度.</p></li>
+<li><p>确定是否有根用连续函数的零点定理.</p></li>
+<li><p>缩短区间长度的方法各种各样, 不同的方法效率有高有低. 比较基本的是二分法.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+求实根的近似解的步骤:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>选择合适的端点<span class="math inline">\(a,b\)</span>使得两个端点的函数值<span class="math inline">\(f(a),f(b)\)</span>异号.</li>
+<li>取<span class="math inline">\(a,b\)</span>的中点<span class="math inline">\(c,\)</span> 根据<span class="math inline">\(f(c)\)</span>的符号, 确定根在区间<span class="math inline">\((a,c)\)</span>还是<span class="math inline">\((c,b)\)</span>内, 由此缩小区间长度.</li>
+</ol>
+</div>
+</div>
+</div>
+<ul>
+<li>大家可以尝试用二分法求方程<span class="math inline">\(x^3+x+1=0\)</span>的根的数值解.</li>
+</ul>
+</section>
+<section id="实根与虚根" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 实根与虚根</h1>
+<ul>
+<li><p>代数基本定理说任意一元<span class="math inline">\(n\)</span>次复系数方程恰有<span class="math inline">\(n\)</span>个复根, 不多也不少.</p></li>
+<li><p>如果方程的系数都是实数的话, 则复根还成对出现.</p></li>
+</ul>
+</section>
+<section id="进一步的思考" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 进一步的思考</h1>
+<p>以下可作为继续的思考:</p>
+<ul>
+<li><p>一元四次, 五次方程是否有公式解?</p></li>
+<li><p>高次方程如何判断有多少实根?</p></li>
+<li><p>求数值解时除了二分法法, 还有什么快一点的方法?</p></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->

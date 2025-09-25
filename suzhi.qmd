@@ -14,7 +14,9 @@ title: "探索法解题"
 ##  问题
 
 Fibonacci数列$\{F_n, \}$数列满足:
-$$ F_{n+1}=F_n+F_{n-1}, n=2,3,\cdots,\quad F_0=F_1=1.$$
+$$\begin{aligned} 
+F_0&=F_1=1,\\
+F_{n+1}&=F_n+F_{n-1}, n=2,3,\cdots.\end{aligned}$$
 
 求$F_{n}$的通项公式?
 
@@ -142,13 +144,13 @@ F_1&=a\lambda_1+b\lambda_2=1
 ::: {.callout-tip collapse="true" icon="true"}
 ##   差分方程
 
-$$a_{n+1}=2a_n+3a_{n-1}, n=2,3,\cdots,\quad a_0=a,a_1=b.$$
+$$\begin{aligned} a_0&=a,a_1=b,\\ a_{n+1}&=2a_n+3a_{n-1}, n=2,3,\cdots.\end{aligned}$$
 
 :::
 ::: {.callout-tip collapse="true" icon="true"}
 ##  重根
 
-$$a_{n+1}=2a_n-a_{n-1}, n=2,3,\cdots,\quad a_0=a,a_1=b.$$
+$$\begin{aligned} a_0&=1,a_1=2,\\ a_{n+1}&=2a_n-a_{n-1}, n=2,3,\cdots.\end{aligned}$$
 
 
 - 只找到一个$a_n=\lambda_1^n,$ 另一个满足递推公式的数列怎么找?

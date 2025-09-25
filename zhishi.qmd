@@ -65,7 +65,7 @@ $$\lim\limits_{x\rightarrow 0} \frac{\sin x}{x}=1$$
 ::: {.callout-warning collapse="true" icon="true"}
 ### 参考答案
 
-    解： $$\lim\limits_{x\rightarrow 0} \frac{\sin 3x}{x}=\lim\limits_{x\rightarrow 0} 3\frac{\sin 3x}{3x}=3\lim\limits_{x\rightarrow 0} \frac{\sin 3x}{3x}=3.$$
+    解： $$\begin{aligned}&\lim\limits_{x\rightarrow 0} \frac{\sin 3x}{x}=\lim\limits_{x\rightarrow 0} 3\frac{\sin 3x}{3x}\\ =&3\lim\limits_{x\rightarrow 0} \frac{\sin 3x}{3x}=3.\end{aligned}$$
 :::
 :::
 

@@ -20,20 +20,24 @@ $$证明:\ \left| e-\left(1+\frac{1}{n}\right)^n  \right| <\frac{3}{2n},  n\in \
 
 ::: {.callout-important collapse="true" icon="true"}
 ## 看到不等式的左边想到什么?
-
-$$重要极限:\ \displaystyle\lim_{n\rightarrow \infty}\left(1+\frac{1}{n}\right)^n=e.$$
+- 重要极限:
+$$\ \displaystyle\lim_{n\rightarrow \infty}\left(1+\frac{1}{n}\right)^n=e.$$
 :::
 
 ::: {.callout-caution collapse="true" icon="true"}
 ## 不等式的左边是什么意思?
 
-左边$|\left(1+\frac{1}{n}\right)^n-e|$, 可以看成$\left(1+\frac{1}{n}\right)^n$作为$e$的近似值的误差
+- 左边$|\left(1+\frac{1}{n}\right)^n-e|$, 可以看成$\left(1+\frac{1}{n}\right)^n$作为$e$的近似值的误差
 :::
 
 ::: {.callout-important collapse="true" icon="true"}
 ## 证明这个不等式的策略是什么?
 
--   由上一步分析, 证明不等式就变成对函数$\left(1+\frac{1}{n}\right)^n$进行估计, 证明作为$e$的近似值的误差 小于$\frac{3}{2n}$. 可以用泰勒公式或幂级数估计误差.
+-   由上一步分析, 证明不等式就变成对函数$\left(1+\frac{1}{n}\right)^n$进行估计, 
+
+- 证明作为$e$的近似值的误差 小于$\frac{3}{2n}$. 
+
+- 可以用泰勒公式或幂级数估计误差.
 :::
 
 ::: {.callout-caution collapse="true" icon="true"}
@@ -60,7 +64,8 @@ $$\left(1+\frac{1}{n}\right)^n=e^{n\ln \left(1+\frac{1}{n}\right)}.$$
 -   先研究指数上的表达式. $${n\ln \left(1+\frac{1}{n}\right)}=1-\frac{1}{2n}+\frac{1}{3n^2}+\cdots<1.$$
 
 -   再用指数函数幂级数展开: $$\begin{aligned}
-    &   0<\left( e-\left(1+\frac{1}{n}\right)^n  \right) =\left( e-e^{n\ln \left(1+\frac{1}{n}\right)}  \right) =e\left( 1-e^{\color{red} n\ln \left(1+\frac{1}{n}\right)-1}  \right) \\ 
+    &   0<\left( e-\left(1+\frac{1}{n}\right)^n  \right) =\left( e-e^{n\ln \left(1+\frac{1}{n}\right)}  \right) \\
+    &=e\left( 1-e^{\color{red} n\ln \left(1+\frac{1}{n}\right)-1}  \right) \\ 
       &=e\left((\frac{1}{2n}-\frac{1}{3n^2}+\cdots) -\frac{1}{2}(\frac{1}{2n}-\frac{1}{3n^2}+\cdots)^2+\cdots \right) \\  
     &<e\left(\frac{1}{2n}-\frac{1}{3n^2}+\cdots  \right) <e\left(\frac{1}{2n}  \right)<\frac{e}{2n}<\frac{3}{n}.
       \end{aligned}$$
@@ -70,10 +75,15 @@ $$\left(1+\frac{1}{n}\right)^n=e^{n\ln \left(1+\frac{1}{n}\right)}.$$
 ::: {.callout-note collapse="true" icon="true"}
 # 参考答案
 
-解: 由对数函数的幂级数展开式有: $$0> {n\ln \left(1+\frac{1}{n}\right)}-1=-\frac{1}{2n}+\frac{1}{3n^2}-\frac{1}{4n^3}+\cdots>-\frac{1}{2n}.$$ 所以 $$\begin{aligned}
+解: 由对数函数的幂级数展开式有: $$\begin{aligned}0&> {n\ln \left(1+\frac{1}{n}\right)}-1\\
+&=-\frac{1}{2n}+\frac{1}{3n^2}-\frac{1}{4n^3}+\cdots>-\frac{1}{2n}.\end{aligned}$$ 所以 
+$$\begin{aligned}
     &   e^{n\ln \left(1+\frac{1}{n}\right)-1} > e^{-\frac{1}{2n}}>1-\frac{1}{2n}. 
-    \end{aligned}$$ 由此有 $$\begin{aligned}
-    &   0<\left( e-\left(1+\frac{1}{n}\right)^n  \right) =\left( e-e^{n\ln \left(1+\frac{1}{n}\right)}\right) =e\left( 1-e^{\color{red} n\ln \left(1+\frac{1}{n}\right)-1}  \right) \\ 
+    \end{aligned}$$ 
+
+由此有 $$\begin{aligned}
+    &   0<\left( e-\left(1+\frac{1}{n}\right)^n  \right) =\left( e-e^{n\ln \left(1+\frac{1}{n}\right)}\right) \\
+    &=e\left( 1-e^{\color{red} n\ln \left(1+\frac{1}{n}\right)-1}  \right) \\ 
     &<e\left(\frac{1}{2n}  \right)<\frac{e}{2n}<\frac{3}{2n}.
     \end{aligned}$$
 :::
@@ -85,7 +95,9 @@ $$\left(1+\frac{1}{n}\right)^n=e^{n\ln \left(1+\frac{1}{n}\right)}.$$
 
 -   要会把此不等式与估计近似值联系起来, 从而想到用泰勒公式
 
--   幂指函数化为指数函数也能想到, 因为我们常用或知道的有泰勒公式的函数就那么几个, 当然要把不常用的函数用它们表示出来
+-   幂指函数化为指数函数.
+
+-   要把不常用的函数用常用或有泰勒公式的函数表示出来.
 
 -   证明不等式可用级数展开式或泰勒公式
 

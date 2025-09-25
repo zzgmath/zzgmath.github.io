@@ -179,9 +179,11 @@ $$
 ::: {.callout-important collapse="true" icon="true"}
 ## 求极限
 
-用皮亚诺余项就行, 应用下面的公式 $$
-o(x^k)o(x^l)=o(x^{k+l}), \quad o(x^2)+o(x^3)= o(x^2), \quad o(5x^2)= o(x^2).
-$$
+用皮亚诺余项就行, 应用下面的公式 $$\begin{aligned}
+o(x^k)o(x^l)&=o(x^{k+l}),\\
+o(x^2)+o(x^3)&= o(x^2), \\
+o(5x^2)&= o(x^2).
+\end{aligned}$$
 :::
 
 ::: {.callout-caution collapse="true" icon="true"}

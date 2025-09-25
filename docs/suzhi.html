@@ -136,7 +136,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切换侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./zhishi.html">案例</a></li><li class="breadcrumb-item"><a href="./suzhi.html">探索法解题</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./zhishi.html"><strong>案例</strong></a></li><li class="breadcrumb-item"><a href="./suzhi.html">探索法解题</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切换侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -168,13 +168,13 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">新模式简介</span></a>
+ <span class="menu-text"><strong>新模式简介</strong></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">案例</span></a>
+ <span class="menu-text"><strong>案例</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="切換部分">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -203,7 +203,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">漫游数学美不胜收</span></a>
+ <span class="menu-text"><strong>漫游数学美不胜收</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="切換部分">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -213,6 +213,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="./taylor.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">泰勒公式</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./scfc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">一元三次方程</span></a>
   </div>
 </li>
       </ul>
@@ -237,7 +243,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./zhishi.html">案例</a></li><li class="breadcrumb-item"><a href="./suzhi.html">探索法解题</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./zhishi.html"><strong>案例</strong></a></li><li class="breadcrumb-item"><a href="./suzhi.html">探索法解题</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">探索法解题</h1>
 </div>
@@ -275,7 +281,9 @@ window.Quarto = {
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Fibonacci数列<span class="math inline">\(\{F_n, \}\)</span>数列满足: <span class="math display">\[ F_{n+1}=F_n+F_{n-1}, n=2,3,\cdots,\quad F_0=F_1=1.\]</span></p>
+<p>Fibonacci数列<span class="math inline">\(\{F_n, \}\)</span>数列满足: <span class="math display">\[\begin{aligned}
+F_0&amp;=F_1=1,\\
+F_{n+1}&amp;=F_n+F_{n-1}, n=2,3,\cdots.\end{aligned}\]</span></p>
 <p>求<span class="math inline">\(F_{n}\)</span>的通项公式?</p>
 </div>
 </div>
@@ -525,7 +533,7 @@ F_1&amp;=a\lambda_1+b\lambda_2=1
 </div>
 <div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><span class="math display">\[a_{n+1}=2a_n+3a_{n-1}, n=2,3,\cdots,\quad a_0=a,a_1=b.\]</span></p>
+<p><span class="math display">\[\begin{aligned} a_0&amp;=a,a_1=b,\\ a_{n+1}&amp;=2a_n+3a_{n-1}, n=2,3,\cdots.\end{aligned}\]</span></p>
 </div>
 </div>
 </div>
@@ -541,7 +549,7 @@ F_1&amp;=a\lambda_1+b\lambda_2=1
 </div>
 <div id="callout-15" class="callout-15-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><span class="math display">\[a_{n+1}=2a_n-a_{n-1}, n=2,3,\cdots,\quad a_0=a,a_1=b.\]</span></p>
+<p><span class="math display">\[\begin{aligned} a_0&amp;=1,a_1=2,\\ a_{n+1}&amp;=2a_n-a_{n-1}, n=2,3,\cdots.\end{aligned}\]</span></p>
 <ul>
 <li><p>只找到一个<span class="math inline">\(a_n=\lambda_1^n,\)</span> 另一个满足递推公式的数列怎么找?</p></li>
 <li><p>方程找根?</p></li>

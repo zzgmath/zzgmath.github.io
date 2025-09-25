@@ -1,0 +1,202 @@
+---
+title: "一元三次方程"
+---
+
+设一元三次方程: $$X^3+AX^2+BX+C=0.$$ 我们研究如何求它的根的问题.
+
+# 公式解
+
+一元三次方程和一元二次方程一样也有求根公式.
+
+::: {.callout-important collapse="true" icon="true"}
+## 一元三次方程还能再简单一点吗?
+
+-   即某些系数为0!
+
+::: {.callout-important collapse="true" icon="true"}
+## 哪个系数容易变成0?
+
+-   平方项的系数$A$.
+
+-   令$X=x-\frac{A}{3},$ 可以把上述方程化为 $$x^3+bx+c=0.$$
+:::
+:::
+
+## 方程$x^3+bx+c=0$的公式解
+
+::: {.callout-tip collapse="true" icon="true"}
+## 1. 设$u=s+t$是方程的一个根
+
+-   代入方程得: $$(s+t)^3+b(s+t)+c=0.$$
+
+-   化简得: $$s^3+t^3+u(3st+b)+c=0.$$
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 2. 包含3个未知数, 如何求解?
+
+-   去掉一个未知数$u$!
+
+-   令$u$的系数为0, 上式中就不含$u$了, 即得方程组 $$
+      \left\{ \begin{aligned}
+          3st+b=0,     \\
+          s^3+t^3+c=0.
+      \end{aligned} \right.
+    $$
+
+-   换个方式看此方程组: $$
+      \left\{ \begin{aligned}
+          s^3\cdot t^3=-\frac{b^3}{27},   \\
+          s^3+t^3=-c.
+      \end{aligned} \right.
+    $$
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 3. 求解$s, t$
+
+-   由根与系数的关系, 上面的方程组说明$s^3, t^3$是方程组 $$
+    x^2+cx-\frac{b^3}{27}=0
+    $$ 的两个根.
+
+-   因此得 $$
+      \left\{ \begin{aligned}
+          s^3=\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}}) ,    \\
+          t^3=\frac{1}{2}({-c-{\sqrt{c^2+\frac{4}{27}b^3}}}) .
+      \end{aligned} \right.
+    $$
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 得到解
+
+-   由此得到$s$有三种选择: $$
+      \left\{ \begin{aligned}
+      s_1&={\sqrt[3]{\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}})}};\\
+      s_2&=\omega{\sqrt[3]{\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}})}};\\
+      s_3&=\omega^2{\sqrt[3]{\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}})}}.
+      \end{aligned} \right.
+    $$ 此处$\omega^3=1, \omega=\displaystyle\frac{1-\sqrt{3}i}{2}$是3次单位根.
+
+-   根据关系$\displaystyle s\cdot t=-\frac{b}{3}$同样可以得到 对应的$t_1,t_2,t_3.$
+
+-   根$u$的表达式: $$\begin{aligned}
+      u_1&=s_1+t_1\\
+      &={\sqrt[3]{\frac{1}{2}({-c+{\sqrt{c^2+\frac{4}{27}b^3}}})}}+{\sqrt[3]{\frac{1}{2}({-c-{\sqrt{c^2+\frac{4}{27}b^3}}})}}.
+    \end{aligned}$$\
+    其余两个根可以类似的写出.
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 求根公式的简化
+
+-   上述公式里面有一些分母, 我们换换记号即可去掉分母.
+
+-   假设一元三次方程为: $$
+    x^3=3px+2q,
+    $$
+
+-   则其有一个根 $$
+    {\sqrt[3]{{q+{\sqrt{q^2-p^3}}}}}+{\sqrt[3]{{q-{\sqrt{q^2-p^3}}}}}.
+    $$
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 一个例子
+
+-   假设$x^3=6x+6,$ 请试试如何用公式求根.
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 用三角函数法推导方程$x^3=3px+2q$的求根公式
+
+-   根据三倍角公式 $$
+    \cos3\theta=4C^3-3C, C=\cos\theta.
+    $$
+-   步骤
+    1.  以$x=2{\sqrt{p}}C$代入方程中,得到 $4C^3-3C=\displaystyle\frac{q}{p\sqrt{p}}.$
+    2.  设$q^2\leq p^3,$ 导出原方程的解 $$
+          x=2\sqrt{p}\cos[\frac{1}{3}(\phi+2m\pi)],
+          $$ 其中$m$是一整数, $\phi=\arccos(q/p\sqrt{p}).$
+    3.  验证此公式给出了方程$x^3=3x$的正确解$x=0,\pm\sqrt{3}.$
+:::
+
+# 有理解
+
+-   虽然一元三次方程有求根公式, 但是此公式比较复杂, 即使方程有简单的根, 从公式中也不能明显地看出来.
+
+-   试试求解方程 $$
+    f(x)=(x-1)(x-2)(x+3)=x^3-7x+6.
+    $$
+
+-   考虑到一般遇到的一元三次方程都有有理根甚至整数根, 所以我们可以合理的猜测根可能是哪些整数, 然后验证是否正确即可.
+
+::: {.callout-tip collapse="true" icon="true"}
+## 有理根长什么样?
+
+-   假设方程$f(x)=ax^3+bx^2+cx+d=0,$ 系数$a,b,c,d$都是整数,
+
+-   设$x=\displaystyle\frac{q}{p}$是方程的一个有理根, 其中$p,q$互素.
+
+-   代入方程得: $$
+    a\left(\frac{q}{p}\right)^3+b\left(\frac{q}{p}\right)^2+c\left(\frac{q}{p}\right)+d=0
+    $$
+
+-   去分母得 $$
+    aq^3+bq^2p+cqp^2+dp^3=0.
+    $$
+
+-   上式可以写成 $$\begin{aligned}
+    &-aq^3=bq^2p+cqp^2+dp^3,\\
+    &aq^3+bq^2p+cqp^2=-dp^3.
+    \end{aligned}$$
+
+-   根据$p,q$互素得$p|a, q|d$.
+
+-   **结论** 有理根的分子是常数项$d$的因子, 分母是3次项$a$的因子.
+
+-   把所有有理根的候选答案, 一一代入方程验证即可.
+:::
+
+::: {.callout-tip collapse="true" icon="true"}
+## 例: 求$f(x)=(x-1)(x-2)(x+3)=x^3-7x+6$的有理根.
+
+-   则此方程的有理根一定是整数, 只可能是 $$\pm1,\, \pm2,\, \pm3,\, \pm6. $$
+
+-   一一代入验证.
+:::
+
+# 数值解
+
+-   有时方程只有无理根或复根, 如果想求出方程的实根的近似解, 就可以用数值方法估计.
+
+-   一个基本的想法是先确定实根在哪个区间上, 然后不断地缩短区间长度.
+
+-   确定是否有根用连续函数的零点定理.
+
+-   缩短区间长度的方法各种各样, 不同的方法效率有高有低. 比较基本的是二分法.
+
+::: {.callout-tip collapse="true" icon="true"}
+## 求实根的近似解的步骤:
+
+1.  选择合适的端点$a,b$使得两个端点的函数值$f(a),f(b)$异号.
+2.  取$a,b$的中点$c,$ 根据$f(c)$的符号, 确定根在区间$(a,c)$还是$(c,b)$内, 由此缩小区间长度.
+:::
+
+-   大家可以尝试用二分法求方程$x^3+x+1=0$的根的数值解.
+
+# 实根与虚根
+
+-   代数基本定理说任意一元$n$次复系数方程恰有$n$个复根, 不多也不少.
+
+-   如果方程的系数都是实数的话, 则复根还成对出现.
+
+# 进一步的思考
+
+以下可作为继续的思考:
+
+-   一元四次, 五次方程是否有公式解?
+
+-   高次方程如何判断有多少实根?
+
+-   求数值解时除了二分法法, 还有什么快一点的方法?
